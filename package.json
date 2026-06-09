@@ -1,0 +1,21 @@
+{
+  "name": "webmcp-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "mcp": "node mcp-server.js",
+    "server": "node server.js",
+    "dev": "concurrently --names MCP,API --prefix-colors cyan,green \"npm run mcp\" \"npm run server\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.103.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
